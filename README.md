@@ -1,11 +1,28 @@
 <h1 align="center">Lumen Store 🏪</h1>
 
+#### Project Progress <Br>
+![](https://geps.dev/progress/11)
+- Currently working on front-side
 
 ### What Project is this 👀?
-- First of all, this is my first ever project that i currently self-taught. This project using <a href="https://www.educative.io/answers/what-is-mevn-stack">MEVN Stack</a> that can manage users, categories, products and of course the process of recording sales. And i've said before, because this are my first project. Maybe, u can encounter errors and bugs 😅
+- First of all, this is my first ever project that i currently self-taught. This project using <a href="https://www.educative.io/answers/what-is-mevn-stack">MEVN Stack</a> that can manage users, categories, products and of course the process of recording sales. And i've said before, because this are my first project. Maybe, u 
+can encounter errors and bugs 😅
+<br>
+
+<h1 align="center">Stack used🏗</h1>
+<p align="center">
+<img src="https://learntocodewith.me/wp-content/uploads/2021/09/mevn-1024x536.png" width="512" height="268">
+</p>
+<p align="center">
+<img src="https://www.educative.io/api/edpresso/shot/5874924880134144/image/4675374538555392">
+</p>
 
 
-### What Project is this 👀?
+
+
+
+
+
 
 
 <!-- ```bash
