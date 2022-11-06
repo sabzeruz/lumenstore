@@ -4,7 +4,9 @@
 ### What Project is this 👀?
 - First of all, this is my first ever project that i currently self-taught. This project using <a href="https://www.educative.io/answers/what-is-mevn-stack">MEVN Stack</a> that can manage users, categories, products and of course the process of recording sales. And i've said before, because this are my first project. Maybe, u can encounter errors and bugs 😅
 
-![alt text](https://learntocodewith.me/wp-content/uploads/2021/09/mevn-1024x536.png)
+
+### What Project is this 👀?
+<img src="https://learntocodewith.me/wp-content/uploads/2021/09/mevn-1024x536.png" alt="MEVN stack" width="500" height="600">
 
 <!-- ```bash
 # install dependencies
