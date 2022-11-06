@@ -1,11 +1,11 @@
 <template >
   <v-row>
-    <v-col cols="8" class="frame-content"> 
+    <v-col cols="8" class="frame-content font-display"> 
       <products></products>
     </v-col>
     <v-col cols="4" class="frame-content white font-display">
-      Order 
-      <products></products>
+      ORDER
+      <!-- <products></products> -->
     </v-col>
   </v-row>
 </template>
