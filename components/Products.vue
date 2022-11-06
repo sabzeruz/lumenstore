@@ -16,7 +16,8 @@
 
                 <v-list>
                     <v-list-item-group v-model="categoryId">
-                        <v-list-item v-for="(category, index) in categories"
+                        <!-- v-list-item v-for="(category, index) in categories" -->
+                        <v-list-item v-for="category in categories" :key="category.key"
                         :value="category.id"
                         :disabled="category.id == categoryId"> <!-- Ketika nilai category.id sama dengan categoryId maka akan di disabled  -->
                             <v-list-item-title class="font-display">{{ category.title }}</v-list-item-title>
