@@ -1,4 +1,41 @@
+
+
 html, body{
     padding: 0;
     overflow: hidden !important;
+  }
+
+
+  .frame-content{
+    height: 90vh;
+    overflow-y: auto;
+  }
+
+  .font-display{
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+
+//? products.vue
+.product-title{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
+  
+  
+
+  /* ubah desain default dari scrollbar */
+  .frame-content::-webkit-scrollbar{
+    width: 5px;
+  }
+
+  .frame-content::-webkit-scrollbar-track{
+    background-color: #fff6f6;
+    border-radius: 100px;
+  }
+
+  .frame-content::-webkit-scrollbar-thumb{
+    background-color: #dbdbdb;
+    border-radius: 100px;
   }

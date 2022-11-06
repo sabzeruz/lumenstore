@@ -22,7 +22,10 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+  ],
+    
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -40,15 +43,21 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    '@nuxtjs/google-fonts'
   ],
 
+  googleFonts: {
+    families: {
+      Inter: [300, 500, 700],
+    }
+  },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/scss/variables.scss'],
-    treeShake: true, //untuk mengeliminasi code yang tidak terpakai
+    treeShake: true,  //untuk mengeliminasi code yang tidak terpakai
     theme: {
       dark: false,
       themes: {

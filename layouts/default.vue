@@ -6,7 +6,7 @@
           <v-list-item-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
-          <v-list-item-content>
+          <v-list-item-content class="font-display">
             <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
@@ -25,7 +25,7 @@
       <!--  app akan mengikuti ukuran dari browser, ketutup sidebar -->
       <v-app-bar-nav-icon @click.stop="sideDrawer = !sideDrawer" v-ripple="false" plain />
       <v-btn v-for="(item, i) in bottomMenu" :key="i" :to="item.to" v-ripple="false" plain>
-        <span>{{ item.title }}</span>
+        <span class="font-display">{{ item.title }}</span>
         <v-icon>{{ item.icon }}</v-icon>
       </v-btn>
       <v-spacer></v-spacer> <!-- memberi jarak-->
