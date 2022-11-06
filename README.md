@@ -1,8 +1,12 @@
-# cashier
+<h1 align="center">Lumen Store 🏪</h1>
 
-## Build Setup
 
-```bash
+### What Project is this 👀?
+- First of all, this is my first ever project that i currently self-taught. This project using <a href="https://www.educative.io/answers/what-is-mevn-stack">MEVN Stack</a> that can manage users, categories, products and of course the process of recording sales. And i've said before, because this are my first project. Maybe, u can encounter errors and bugs 😅
+
+![alt text](https://learntocodewith.me/wp-content/uploads/2021/09/mevn-1024x536.png)
+
+<!-- ```bash
 # install dependencies
 $ npm install
 
@@ -66,4 +70,4 @@ More information about the usage of this directory in [the documentation](https:
 This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
-# lumenstore
+# lumenstore -->
