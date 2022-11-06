@@ -6,7 +6,7 @@
 
 
 ### What Project is this 👀?
-<img src="https://learntocodewith.me/wp-content/uploads/2021/09/mevn-1024x536.png" alt="MEVN stack" width="500" height="600">
+<img src="https://learntocodewith.me/wp-content/uploads/2021/09/mevn-1024x536.png" alt="MEVN stack" width="960" height="800">
 
 <!-- ```bash
 # install dependencies
