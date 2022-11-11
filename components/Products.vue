@@ -1,7 +1,22 @@
 <template>
         <v-row>
         <v-col cols="10">
-            Search
+            <!-- filter berdasarkan title, nilainya berdasarkan value yang diisi oleh user. diisi datanya ke itemsearch,
+                 maka tinggal mengeluarkan datanya di item-text
+                dan item-value -->
+            <v-autocomplete class="font-display"
+            label="products"
+            placeholder="Start typing to search"
+            :search-input.sync="search"
+            :loading="isLoading"
+            :items="itemSearch"
+            item-text="title" 
+            item-value="id"
+            v-model="selectedSearch"
+            return-object
+            >           
+
+            </v-autocomplete>
         </v-col>
         <v-col cols="2">
             <v-menu>
@@ -16,10 +31,13 @@
 
                 <v-list>
                     <v-list-item-group v-model="categoryId">
-                        <!-- v-list-item v-for="(category, index) in categories" -->
-                        <v-list-item v-for="category in categories" :key="category.key"
+                        <!-- <v-list-item v-for="category in categories" :key="category.key"
                         :value="category.id"
-                        :disabled="category.id == categoryId"> <!-- Ketika nilai category.id sama dengan categoryId maka akan di disabled  -->
+                        :disabled="category.id == categoryId">  -->
+                        <v-list-item v-for="(category, index) in categories"
+                        :key="index"
+                        :value="category.id"
+                        :disabled="category.id == categoryId"><!-- Ketika nilai category.id sama dengan categoryId maka akan di disabled  -->
                             <v-list-item-title class="font-display">{{ category.title }}</v-list-item-title>
                         </v-list-item>
                     </v-list-item-group>
@@ -29,7 +47,8 @@
 
     <v-row>
         <!-- v-col v-for="(product, index) in products"-->
-        <v-col v-for="product in filteredProducts" :key="product.key" cols="2"> <!-- fix friendly error -->
+        <v-col v-for="(product, index) in filteredProducts" 
+        :key="index" cols="2"> <!-- fix friendly error -->
             <v-card :title="product.title"
             :ripple="true">
                 <v-card-actions>
@@ -77,7 +96,17 @@ export default ({
                  { id: 4, title: 'x1430 Crystals', thumbnail: 'honkai-crystal.png', price: 479000, categoryId: 3 },
                  { id: 5, title: 'x3860 Crystals', thumbnail: 'honkai-crystal.png', price: 790000, categoryId: 3 },
                  { id: 6, title: 'x8088 Crystals', thumbnail: 'honkai-crystal.png', price: 1599000, categoryId: 3 },
-            ]
+            ],
+            search: null,
+            isLoading: false,
+            itemSearch: [],
+            selectedSearch: null,
+        }
+    },
+
+    methods: {
+        resetSearchCategory(){
+            this.categoryId = false
         }
     },
 
@@ -86,12 +115,27 @@ export default ({
         filteredProducts() {
             if(this.categoryId){
                 return this.products.filter(s => s.categoryId == this.categoryId)
+            }else if(this.selectedSearch){
+                return this.products.filter(s => s.title == this.selectedSearch.title)
             }
 
             return this.products
         }
     },
-
+    watch: {
+        // parameter val memiliki data yang kita ketikkan.
+        // ketika ada user mengetikkan nama product, maka akan filter berdasarkan data product
+        search(){           
+            this.isLoading = true
+            setTimeout(() => {
+                this.itemSearch = this.products.filter(e => {
+                    this.isLoading = false
+                    this.resetSearchCategory()
+                    return e.title //filternya berdasarkan e.title
+                })
+            }, 1000)
+        }
+    }
 })
 </script>
 

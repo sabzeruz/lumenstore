@@ -43,15 +43,15 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
-    '@nuxtjs/google-fonts'
+    //? '@nuxtjs/google-fonts'
   ],
 
-  googleFonts: {
-    families: {
-      Inter: [300, 500, 700],
-    }
-  },
-  // Modules: https://go.nuxtjs.dev/config-modules
+  //? googleFonts: {
+  // ?  families: {
+  //  ?   Inter: [300, 500, 700],
+  //   ?}
+  //? },
+  // ? Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
