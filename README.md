@@ -1,7 +1,7 @@
 <h1 align="center">Lumen Store 🏪</h1>
 
 #### Project Progress <Br>
-![](https://geps.dev/progress/14)
+![](https://geps.dev/progress/16)
 - Currently working on front-side
 
 ### What Project is this 👀?
